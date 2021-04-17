@@ -10,6 +10,7 @@ import nbay from './nbay';
 import other from './other';
 import hlist from './hlist';
 import birthDates from './birthDates';
+import filmDates from './filmDates';
 import labeledDates from './labeledDates';
 import deathDates from './deathDates';
 import url from './url';
@@ -25,6 +26,7 @@ const dataTypes = [
   coords,
   marriages,
   birthDates,
+  filmDates,
   labeledDates,
   deathDates,
   unbulletedLists,
@@ -40,7 +42,7 @@ const dataTypes = [
   unmarkedLists,
 ];
 
-export default dataTypes.map(type => {
+export default dataTypes.map((type) => {
   return {
     handler: createDataTypeHandler(type),
     name: type.name,

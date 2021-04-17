@@ -9,5 +9,6 @@ describe('Should Parse Hairspray Movie Data', () => {
   it('Handle Arrays with Plain list with space', () => {
     Array.isArray(properties.general.starring).should.equal(true);
     Array.isArray(properties.general.producer).should.equal(true);
+    properties.general.released.should.equal('Something like a real date');
   });
 });
